@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt" xml:lang="pt" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Atividade | PMarés - Um estudo sobre a função trigonométrica Seno  </title>
+<meta name="author" content="Lucia Dias" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.7 - exelearning.net" />
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<script type="text/javascript" src="SCORM_API_wrapper.js"></script>
+<script type="text/javascript" src="SCOFunctions.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+	</head>
+<body id="exe-node-11" class="exe-scorm" onunload="unloadPage(true)"><script type="text/javascript">document.body.className+=" js";jQuery(function(){loadPage()})</script>
+<div id="outer">
+<section id="main">
+<header id="nodeDecoration"><div id="headerContent"><h1 id="nodeTitle">Atividade</h1></div></header>
+<article class="iDevice_wrapper QuizTestIdevice em_iDevice em_iDevice_question" id="id16">
+<script type="text/javascript">
+<!-- //<![CDATA[
+scorm.SetInteractionValue("cmi.score.scaled", "0");
+var numQuestions = 3;
+var rawScore = 0;
+var actualScore = 0;
+var question0;
+var question1;
+var question2;
+var key0 = 0;
+var key1 = 2;
+var key2 = 2;
+function getAnswer()
+        {
+            scorm.SetInteractionValue("cmi.interactions.0.id","key0b16");
+            scorm.SetInteractionValue("cmi.interactions.0.type","choice");
+            scorm.SetInteractionValue("cmi.interactions.0.correct_responses.0.pattern",
+                          "0");
+            
+            for (var i=0; i < 4; i++)
+            {
+               if (document.getElementById("quizForm16").key0b16[i].checked)
+               {
+                  question0 = document.getElementById("quizForm16").key0b16[i].value;
+                  scorm.SetInteractionValue("cmi.interactions.0.student_response",question0);
+                  break;
+               }
+            }
+           
+            scorm.SetInteractionValue("cmi.interactions.1.id","key1b16");
+            scorm.SetInteractionValue("cmi.interactions.1.type","choice");
+            scorm.SetInteractionValue("cmi.interactions.1.correct_responses.0.pattern",
+                          "2");
+            
+            for (var i=0; i < 4; i++)
+            {
+               if (document.getElementById("quizForm16").key1b16[i].checked)
+               {
+                  question1 = document.getElementById("quizForm16").key1b16[i].value;
+                  scorm.SetInteractionValue("cmi.interactions.1.student_response",question1);
+                  break;
+               }
+            }
+           
+            scorm.SetInteractionValue("cmi.interactions.2.id","key2b16");
+            scorm.SetInteractionValue("cmi.interactions.2.type","choice");
+            scorm.SetInteractionValue("cmi.interactions.2.correct_responses.0.pattern",
+                          "2");
+            
+            for (var i=0; i < 4; i++)
+            {
+               if (document.getElementById("quizForm16").key2b16[i].checked)
+               {
+                  question2 = document.getElementById("quizForm16").key2b16[i].value;
+                  scorm.SetInteractionValue("cmi.interactions.2.student_response",question2);
+                  break;
+               }
+            }
+           }
+        function calcRawScore(){
+
+            if (question0 == key0)
+            {
+               scorm.SetInteractionValue("cmi.interactions.0.result","correct");
+               rawScore++;
+            }
+            else
+            {
+               scorm.SetInteractionValue("cmi.interactions.0.result","wrong");
+            }
+            if (question1 == key1)
+            {
+               scorm.SetInteractionValue("cmi.interactions.1.result","correct");
+               rawScore++;
+            }
+            else
+            {
+               scorm.SetInteractionValue("cmi.interactions.1.result","wrong");
+            }
+            if (question2 == key2)
+            {
+               scorm.SetInteractionValue("cmi.interactions.2.result","correct");
+               rawScore++;
+            }
+            else
+            {
+               scorm.SetInteractionValue("cmi.interactions.2.result","wrong");
+            }
+        }
+       
+        function calcScore2()
+        {
+           computeTime();  // the student has stopped here.
+       
+           document.getElementById("quizForm16").submitB.disabled = true;
+       
+           getAnswer();
+    
+           calcRawScore();
+          
+           actualScore = Math.round(rawScore / numQuestions * 100);
+                    var msg_str ="A sua pontuação é %d%%";            alert(msg_str.replace("%d",actualScore).replace("%%","%"));  
+          
+           scorm.SetScoreRaw(actualScore+"" );
+           scorm.SetScoreMax(100);
+           scorm.SetScoreMin(0);
+          
+           var mode = scorm.GetMode();
+
+               if ( mode != "review"  &&  mode != "browse" ){
+                 if ( actualScore < 20 )
+                 {
+                   scorm.SetCompletionScormActivity("incomplete");
+                   scorm.SetSuccessStatus("failed");
+                   if (scorm.version == '2004') {
+                       scorm.SetInteractionValue("cmi.score.scaled", actualScore/100);
+                   }
+                 }
+                 else
+                 {
+                   scorm.SetCompletionScormActivity("completed");
+                   scorm.SetSuccessStatus("passed");
+                   if (scorm.version == '2004') {
+                       scorm.SetInteractionValue("cmi.score.scaled", actualScore/100);
+                   }
+                 }
+
+                 scorm.SetExit("");
+                 }
+
+         exitPageStatus = true;
+    
+    
+         scorm.save();
+    
+         scorm.quit();
+         
+        }
+//]]> -->
+</script>
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Teste SCORM (sumativo)</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<form name="quizForm16" id="quizForm16" action="#" class="quiz-test-form">
+<input type="hidden" name="passrate" id="passrate-16" value="20" />
+<section class="question">
+<h1 class="js-sr-av">Pergunta</h1>
+<div id="taquestion0b16" class="block iDevice_content">
+<p>Determine o valore reai de m para que a seguinte equação tenha solução: a) sen x = 2m - 7</p>
+</div>
+<section class="iDevice_answers">
+<h1 class="js-sr-av">Respostas</h1>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key0b161" class="sr-av"><a href="#answer-key0b161">Opção 1</a></label><input type="radio" name="key0b16" id="key0b161" value="0" />
+</p>
+<div class="iDevice_answer-content" id="answer-key0b161">
+<div id="taoptionAnswer0q0b16" class="block iDevice_content">
+<p>{m ∈ R | 3 ≤ m ≤ 4}</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key0b162" class="sr-av"><a href="#answer-key0b162">Opção 2</a></label><input type="radio" name="key0b16" id="key0b162" value="1" />
+</p>
+<div class="iDevice_answer-content" id="answer-key0b162">
+<div id="taoptionAnswer1q0b16" class="block iDevice_content">
+<p>{m ∈ R | m ≤ 4}</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key0b163" class="sr-av"><a href="#answer-key0b163">Opção 3</a></label><input type="radio" name="key0b16" id="key0b163" value="2" />
+</p>
+<div class="iDevice_answer-content" id="answer-key0b163">
+<div id="taoptionAnswer2q0b16" class="block iDevice_content">
+<p>{m ∈ R | m ≤ 3}</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key0b164" class="sr-av"><a href="#answer-key0b164">Opção 4</a></label><input type="radio" name="key0b16" id="key0b164" value="3" />
+</p>
+<div class="iDevice_answer-content" id="answer-key0b164">
+<div id="taoptionAnswer3q0b16" class="block iDevice_content">
+<p>{m ∈ R | 3 ≥ m ≥ 4}</p>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section class="question">
+<h1 class="js-sr-av">Pergunta</h1>
+<div id="taquestion1b16" class="block iDevice_content">
+<p>Determine o valore reai de m para que a seguinte equação tenha solução: b) sen x = 3m - 2</p>
+</div>
+<section class="iDevice_answers">
+<h1 class="js-sr-av">Respostas</h1>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key1b161" class="sr-av"><a href="#answer-key1b161">Opção 1</a></label><input type="radio" name="key1b16" id="key1b161" value="0" />
+</p>
+<div class="iDevice_answer-content" id="answer-key1b161">
+<div id="taoptionAnswer0q1b16" class="block iDevice_content">
+<p>{m ∈ R | 1/3 ≤ m }</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key1b162" class="sr-av"><a href="#answer-key1b162">Opção 2</a></label><input type="radio" name="key1b16" id="key1b162" value="1" />
+</p>
+<div class="iDevice_answer-content" id="answer-key1b162">
+<div id="taoptionAnswer1q1b16" class="block iDevice_content">
+<p>{m ∈ R | m ≤ 1}</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key1b163" class="sr-av"><a href="#answer-key1b163">Opção 3</a></label><input type="radio" name="key1b16" id="key1b163" value="2" />
+</p>
+<div class="iDevice_answer-content" id="answer-key1b163">
+<div id="taoptionAnswer2q1b16" class="block iDevice_content">
+<p>{m ∈ R | 1/3 ≤ m ≤ 1}</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key1b164" class="sr-av"><a href="#answer-key1b164">Opção 4</a></label><input type="radio" name="key1b16" id="key1b164" value="3" />
+</p>
+<div class="iDevice_answer-content" id="answer-key1b164">
+<div id="taoptionAnswer3q1b16" class="block iDevice_content">
+<p>{m ∈ R | 1/2 ≤ m ≤ 1}</p>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section class="question">
+<h1 class="js-sr-av">Pergunta</h1>
+<div id="taquestion2b16" class="block iDevice_content">
+<p>Determine o valore reai de m para que a seguinte equação tenha solução: c) 4m + sen x = 1</p>
+<p></p>
+</div>
+<section class="iDevice_answers">
+<h1 class="js-sr-av">Respostas</h1>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key2b161" class="sr-av"><a href="#answer-key2b161">Opção 1</a></label><input type="radio" name="key2b16" id="key2b161" value="0" />
+</p>
+<div class="iDevice_answer-content" id="answer-key2b161">
+<div id="taoptionAnswer0q2b16" class="block iDevice_content">
+<p>{m ∈ R | 1/2 ≤ m ≤ 0}</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key2b162" class="sr-av"><a href="#answer-key2b162">Opção 2</a></label><input type="radio" name="key2b16" id="key2b162" value="1" />
+</p>
+<div class="iDevice_answer-content" id="answer-key2b162">
+<div id="taoptionAnswer1q2b16" class="block iDevice_content">
+<p>{m ∈ R | 1 ≤ m ≤ 0}</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key2b163" class="sr-av"><a href="#answer-key2b163">Opção 3</a></label><input type="radio" name="key2b16" id="key2b163" value="2" />
+</p>
+<div class="iDevice_answer-content" id="answer-key2b163">
+<div id="taoptionAnswer2q2b16" class="block iDevice_content">
+<p>{m ∈ R | 0 ≤ m ≤ 1/2}</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key2b164" class="sr-av"><a href="#answer-key2b164">Opção 4</a></label><input type="radio" name="key2b16" id="key2b164" value="3" />
+</p>
+<div class="iDevice_answer-content" id="answer-key2b164">
+<div id="taoptionAnswer3q2b16" class="block iDevice_content">
+<p>{m ∈ R | -1 ≤ m ≤ 0}</p>
+</div>
+</div>
+</section>
+</section>
+</section>
+<div class="block iDevice_buttons">
+<p><input type="submit" name="submitB" value="SUBMETER RESPOSTAS" /> <span class="js-hidden js-warning">Permitir JavaScript</span></p>
+</div>
+<div id="quizFormScore16"></div>
+</form>
+</div>
+</div>
+</div>
+</article>
+</section>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Sob licença</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licença Creative Commons Atribuição Compartilha Igual 4.0</a></p>
+</div>
+</div>
+<script type="text/javascript" src="_cedec_js.js"></script></body></html>
